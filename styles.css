@@ -1,5 +1,12 @@
+@import './filter.css';
+
 body {
   display: grid;
   grid-template-rows: 55px auto 58px;
   height: 100vh;
+}
+
+button {
+  border: 0;
+  background: none;
 }
