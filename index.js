@@ -8,3 +8,17 @@ async function fetchPeople() {
     console.log(error);
   }
 }
+
+const cardsFilter = document.querySelector('[data-js=filter]');
+const cardsContainer = document.querySelector('[data-js=cards]');
+
+renderCards();
+
+function renderCards() {
+  cardsContainer.innerHTML = '';
+  cards.forEach(card => {
+    const cardElement = document.createElement('li');
+    cardElement.className = 'card';
+    cardElement.innerHtml = ``;
+  });
+}
