@@ -12,187 +12,160 @@
   <body>
     <header>HARRY POTTER APP</header>
     <main>
-      <form data-js="filter-form" aria-labeledby="form-heading">
-        <fieldset>
-          <legend id="form-heading">Filter by WIZARD:</legend>
+      <div class="flex-filter">
+        <form aria-labeledby="form-heading">
+          <fieldset>
+            <legend id="form-heading">Filter by WIZARD:</legend>
+            <input
+              name="tag-filter"
+              value="all"
+              class="tag-input"
+              id="tag-all"
+              type="radio"
+              checked
+            />
+            <label class="tag-label" for="tag-all">all</label>
+            <input
+              name="tag-filter"
+              value="true"
+              class="tag-input"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-all">true</label>
+            <input
+              name="tag-filter"
+              value="false"
+              class="tag-input"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-all">false</label>
+          </fieldset>
+        </form>
 
-          <input
-            name="tag-filter"
-            value="true"
-            class="tag-input"
-            id="tag-true"
-            type="radio"
-            checked
-          />
-          <label class="tag-label" for="tag-all">true</label>
-          <input
-            name="tag-filter"
-            value="false"
-            class="tag-input"
-            id="tag-false"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-all">false</label>
-        </fieldset>
-      </form>
+        <form data-js="filter-form" aria-labeledby="form-heading">
+          <fieldset>
+            <legend id="form-heading">Filter by HOUSE:</legend>
+            <input
+              name="tag-filter"
+              value="all"
+              class="tag-input"
+              id="tag-all"
+              type="radio"
+              checked
+            />
+            <label class="tag-label" for="tag-all">all</label>
+            <input
+              name="tag-filter"
+              value="Gryffindor"
+              class="tag-input"
+              id="tag-all"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-all">Gryffindor</label>
+            <input
+              name="tag-filter"
+              value="Hufflepuff"
+              class="tag-input"
+              id="tag-Gryffindor"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-basic">Hufflepuff</label>
+            <input
+              name="tag-filter"
+              value="Ravenclaw"
+              class="tag-input"
+              id="tag-Hufflepuff"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-css">Ravenclaw</label>
+            <input
+              name="tag-filter"
+              value="Slytherin"
+              class="tag-input"
+              id="tag-Ravenclaw"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-git">Slytherin</label>
+          </fieldset>
+        </form>
 
-      <form data-js="filter-form" aria-labeledby="form-heading">
-        <fieldset>
-          <legend id="form-heading">Filter by HOUSE:</legend>
-          <input
-            name="tag-filter"
-            value="all"
-            class="tag-input"
-            id="tag-all"
-            type="radio"
-            checked
-          />
-          <label class="tag-label" for="tag-all">Gryffindor</label>
-          <input
-            name="tag-filter"
-            value="Gryffindor"
-            class="tag-input"
-            id="tag-Gryffindor"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-basic">Hufflepuff</label>
-          <input
-            name="tag-filter"
-            value="Hufflepuff"
-            class="tag-input"
-            id="tag-Hufflepuff"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-css">Ravenclaw</label>
-          <input
-            name="tag-filter"
-            value="Ravenclaw"
-            class="tag-input"
-            id="tag-Ravenclaw"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-git">Slytherin</label>
-          <input
-            name="tag-filter"
-            value="Slytherin"
-            class="tag-input"
-            id="tag-Slytherin"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-html">All</label>
-          <input name="tag-filter" value="shell" class="tag-input" id="tag-All"
-          type="radio"
-        </fieldset>
-      </form>
-
-      <form data-js="filter-form" aria-labeledby="form-heading">
-        <fieldset>
-          <legend id="form-heading">Filter by GENDER:</legend>
-          <input
-            name="tag-filter"
-            value="all"
-            class="tag-input"
-            id="tag-all"
-            type="radio"
-            checked
-          />
-          <label class="tag-label" for="tag-all">all</label>
-          <input
-            name="tag-filter"
-            value="basic"
-            class="tag-input"
-            id="tag-basic"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-basic">basic</label>
-          <input
-            name="tag-filter"
-            value="css"
-            class="tag-input"
-            id="tag-css"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-css">css</label>
-          <input
-            name="tag-filter"
-            value="git"
-            class="tag-input"
-            id="tag-git"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-git">git</label>
-          <input
-            name="tag-filter"
-            value="html"
-            class="tag-input"
-            id="tag-html"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-html">html</label>
-          <input
-            name="tag-filter"
-            value="shell"
-            class="tag-input"
-            id="tag-shell"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-shell">shell</label>
-        </fieldset>
-      </form>
-      <form data-js="filter-form" aria-labeledby="form-heading">
-        <fieldset>
-          <legend id="form-heading">Filter by SPECIES:</legend>
-          <input
-            name="tag-filter"
-            value="all"
-            class="tag-input"
-            id="tag-all"
-            type="radio"
-            checked
-          />
-          <label class="tag-label" for="tag-all">all</label>
-          <input
-            name="tag-filter"
-            value="basic"
-            class="tag-input"
-            id="tag-basic"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-basic">basic</label>
-          <input
-            name="tag-filter"
-            value="css"
-            class="tag-input"
-            id="tag-css"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-css">css</label>
-          <input
-            name="tag-filter"
-            value="git"
-            class="tag-input"
-            id="tag-git"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-git">git</label>
-          <input
-            name="tag-filter"
-            value="html"
-            class="tag-input"
-            id="tag-html"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-html">html</label>
-          <input
-            name="tag-filter"
-            value="shell"
-            class="tag-input"
-            id="tag-shell"
-            type="radio"
-          />
-          <label class="tag-label" for="tag-shell">shell</label>
-        </fieldset>
-      </form>
+        <form aria-labeledby="form-heading">
+          <fieldset>
+            <legend id="form-heading">Filter by GENDER:</legend>
+            <input
+              name="tag-filter"
+              value="all"
+              class="tag-input"
+              id="tag-all"
+              type="radio"
+              checked
+            />
+            <label class="tag-label" for="tag-all">all</label>
+            <input
+              name="tag-filter"
+              value="female"
+              class="tag-input"
+              id="tag-basic"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-basic">female</label>
+            <input
+              name="tag-filter"
+              value="male"
+              class="tag-input"
+              id="tag-css"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-css">male</label>
+          </fieldset>
+        </form>
+        <form aria-labeledby="form-heading">
+          <fieldset>
+            <legend id="form-heading">Filter by SPECIES:</legend>
+            <input
+              name="tag-filter"
+              value="all"
+              class="tag-input"
+              id="tag-all"
+              type="radio"
+              checked
+            />
+            <label class="tag-label" for="tag-all">all</label>
+            <input
+              name="tag-filter"
+              value="giant"
+              class="tag-input"
+              id="tag-all"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-all">Giant</label>
+            <input
+              name="tag-filter"
+              value="human"
+              class="tag-input"
+              id="tag-basic"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-basic">Human</label>
+            <input
+              name="tag-filter"
+              value="goblin"
+              class="tag-input"
+              id="tag-css"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-css">Goblin</label>
+            <input
+              name="tag-filter"
+              value="ghost"
+              class="tag-input"
+              id="tag-git"
+              type="radio"
+            />
+            <label class="tag-label" for="tag-git">Ghost</label>
+          </fieldset>
+        </form>
+      </div>
       <!-- div class="filter" data-js="filter">
         <h2>Filter</h2>
 

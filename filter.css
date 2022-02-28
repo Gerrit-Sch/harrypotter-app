@@ -1,3 +1,8 @@
+.flex-filter {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 /* Style The Dropdown Button */
 .dropbtn {
   background-color: #4caf50;

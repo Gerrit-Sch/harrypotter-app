@@ -1,0 +1,14 @@
+.card {
+  background: rgb(183, 183, 183);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+  width: 20vw;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -3,29 +3,39 @@ fetch('http://hp-api.herokuapp.com/api/characters')
   .then(data => renderCards(data))
   .catch(error => console.log(error));
 
-/*const cardsFilter = document.querySelector('[data-js=filter]');*/
 const cardsContainer = document.querySelector('[data-js=cards]');
+const filterForm = document.querySelector('[data-js=filter-form]');
+
+let currentFilter = 'all';
+
+filterForm.addEventListener('change', () => {
+  currentFilter = filterForm.elements['tag-filter'].value;
+  renderCards();
+});
 
 function renderCards(data) {
   cardsContainer.innerHTML = '';
 
-  data.forEach(card => {
-    /*.filter(
-    (card) => card.tags.includes(currentFilter) || currentFilter === "all"*/
-
-    const cardElement = document.createElement('li');
-    cardElement.className = 'card';
-    cardElement.innerHTML = `
+  data
+    .filter(
+      card => card.house.includes(currentFilter) || currentFilter === 'all'
+    )
+    .forEach(card => {
+      const cardElement = document.createElement('li');
+      cardElement.className = 'card';
+      cardElement.innerHTML = `
     <h2>${card.name}</h2>
     <ul>
-    <li${card.house}</li>
+    <li>${card.house}</li>
     <li>Is a Wizard? ${card.wizard}</li>
     <li>${card.species}</li>
     <li>${card.gender}</li>
     </ul>
     `;
-    cardsContainer.append(cardElement);
-  });
+      cardsContainer.append(cardElement);
+    });
 }
+
+renderCards();
 
 export default renderCards;
