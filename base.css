@@ -1,0 +1,14 @@
+h1 {
+  border-radius: 10px;
+  background-color: green;
+  padding: 20px;
+  margin: 0;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html {
+  font-family: yesteryear;
+  background-color: #d3a625;
+}

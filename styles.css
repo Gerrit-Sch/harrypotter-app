@@ -1,5 +1,6 @@
 @import './filter.css';
 @import './cards.css';
+@import './base.css';
 
 body {
   display: grid;

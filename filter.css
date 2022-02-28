@@ -1,6 +1,9 @@
 .flex-filter {
   display: flex;
   flex-wrap: nowrap;
+  margin-top: 40px;
+  justify-content: center;
+  border-radius: 80%;
 }
 
 /* Style The Dropdown Button */
@@ -51,4 +54,13 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
+}
+
+.filter__content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  border-width: 5px;
+  border-color: #3e8e41;
+  box-shadow: gold;
 }
